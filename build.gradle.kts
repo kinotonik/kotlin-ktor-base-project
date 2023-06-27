@@ -26,7 +26,12 @@ dependencies {
     // ces dépendances permettent d'assurer la dé/sérialisation de JSON vers des objets
     implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
+    implementation ("io.ktor:ktor-client-json:$ktor_version")
+    implementation ("io.ktor:ktor-client-json-jvm:$ktor_version")
 
     // fournir une implémentation de client HTTP pour Ktor
     implementation("io.ktor:ktor-client-apache:$ktor_version")
+
+    implementation ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
+
 }
